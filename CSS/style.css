@@ -14,7 +14,7 @@ html {
   --gallery-prise-back-color: #8c8c8c;
   --galley-prise-change-color: #7fd9c7;
   --text-color: #555252;
-  --button-color: #4ec6ab;
+  --action__button--color: #4ec6ab;
   --main-font: 'Roboto', sans-serif;
   --second-font: 'Open Sans', sans-serif;
 
@@ -31,7 +31,7 @@ html {
   /* position: relative; */
 }
 
-.top__header {
+.top {
   display: flex;
   background-color: #19bb9b;
   height: 50px;
@@ -276,7 +276,7 @@ html {
   text-align: center;
 }
 
-.setting::before {
+.settings__item--setting::before {
   display: inline-block;
   width: 65px;
   height: 65px;
@@ -287,7 +287,7 @@ html {
   background-size: contain;
 }
 
-.power::before {
+.settings__item--power::before {
   display: inline-block;
   width: 65px;
   height: 65px;
@@ -298,7 +298,7 @@ html {
   background-size: contain;
 }
 
-.world::before {
+.settings__item--world::before {
   display: inline-block;
   width: 65px;
   height: 65px;
@@ -310,7 +310,7 @@ html {
   right: 50;
 }
 
-.compass::before {
+.settings__item--compass::before {
   display: inline-block;
   width: 65px;
   height: 65px;
@@ -485,7 +485,7 @@ html {
   display: block;
 }
 
-.button-like {
+.action__button--like {
   background-image: url(../imeges/hover/like.png);
   background-color: transparent;
   margin: 0;
@@ -499,13 +499,13 @@ html {
   transition: background-color var(--animation-time) var(--animation-function);
 }
 
-.button-like:hover,
-.button-like:focus {
+.action__button--like:hover,
+.action__button--like:focus {
   background-color: var(--change-link-color);
   cursor: pointer;
 }
 
-.button-review {
+.action__button--review {
   margin: 0;
   padding: 0;
   background-color: transparent;
@@ -519,13 +519,13 @@ html {
   transition: background-color var(--animation-time) var(--animation-function);
 }
 
-.button-review:hover,
-.button-review:focus {
+.action__button--review:hover,
+.action__button--review:focus {
   background-color: var(--change-link-color);
   cursor: pointer;
 }
 
-.button-clock {
+.action__button--clock {
   margin: 0;
   padding: 0;
   background-color: transparent;
@@ -538,13 +538,13 @@ html {
   transition: background-color var(--animation-time) var(--animation-function);
 }
 
-.button-clock:hover,
-.button-clock:focus {
+.action__button--clock:hover,
+.action__button--clock:focus {
   background-color: var(--change-link-color);
   cursor: pointer;
 }
 
-.add-cart {
+.action__button--add {
   margin: 0;
   padding: 0;
   background-color: transparent;
@@ -558,8 +558,8 @@ html {
   transition: background-color var(--animation-time) var(--animation-function);
 }
 
-.add-cart:hover,
-.add-cart:focus {
+.action__button--add:hover,
+.action__button--add:focus {
   background-color: #323232;
   cursor: pointer;
 }
@@ -605,7 +605,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--button-color);
+  background-color: var(--action__button--color);
   color: #ffffff;
   border-radius: 3px;
   text-decoration: none;
